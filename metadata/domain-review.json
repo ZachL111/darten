@@ -1,0 +1,73 @@
+{
+  "repo": "darten",
+  "language": "Dart",
+  "category": "Offline sync",
+  "goal": "Model offline note edits, vector clocks, and deterministic conflict resolution.",
+  "review_model": {
+    "terms": [
+      "input pressure",
+      "state drift",
+      "review cost",
+      "decision risk"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input pressure",
+      "signal": 47,
+      "slack": 43,
+      "drag": 9,
+      "confidence": 54,
+      "score": 164,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "state drift",
+      "signal": 49,
+      "slack": 49,
+      "drag": 27,
+      "confidence": 47,
+      "score": 113,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "review cost",
+      "signal": 62,
+      "slack": 24,
+      "drag": 21,
+      "confidence": 83,
+      "score": 168,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "decision risk",
+      "signal": 86,
+      "slack": 53,
+      "drag": 31,
+      "confidence": 79,
+      "score": 211,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input pressure",
+      "signal": 72,
+      "slack": 28,
+      "drag": 29,
+      "confidence": 91,
+      "score": 176,
+      "lane": "ship"
+    }
+  ]
+}
