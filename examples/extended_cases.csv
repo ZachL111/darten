@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,64,84,18,13,8,86,review,offline sync baseline scenario exercises the review path for bounded failure handling
+pressure,76,70,26,20,9,25,review,offline sync pressure scenario exercises the review path for bounded failure handling
+surge,107,95,24,15,14,165,review,offline sync surge scenario exercises the review path for bounded failure handling
+degraded,66,62,32,28,7,-81,review,offline sync degraded scenario exercises the review path for bounded failure handling
+recovery,90,104,22,14,11,145,review,offline sync recovery scenario exercises the review path for bounded failure handling
+boundary,72,85,26,16,9,56,review,offline sync boundary scenario exercises the review path for bounded failure handling
