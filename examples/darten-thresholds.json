@@ -1,0 +1,17 @@
+{
+  "repo": "darten",
+  "thresholds": {
+    "signal": 4,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 3,
+    "ship": 175,
+    "watch": 118
+  },
+  "terms": [
+    "input pressure",
+    "state drift",
+    "review cost",
+    "decision risk"
+  ]
+}
